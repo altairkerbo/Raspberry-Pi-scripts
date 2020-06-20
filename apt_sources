@@ -1,0 +1,10 @@
+#!/bin/bash
+
+cp /etc/apt/sources.list /etc/apt/sources.list.bac
+echo "deb http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ buster main non-free contrib rpi
+deb-src http://mirrors.tuna.tsinghua.edu.cn/raspbian/raspbian/ buster main non-free contrib rpi
+" > /etc/apt/sources.list
+cp /etc/apt/sources.list.d/raspi.list /etc/apt/raspi.list.bac
+echo "deb http://mirrors.tuna.tsinghua.edu.cn/raspberrypi/ buster main ui
+" > /etc/apt/sources.list.d/rapsi.list
+

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+./apt_sources;echo "- 更换apt源，并update" >> README.txt
+./static_ip;echo "- 设置静态ip" >> README.txt
+./vnc;echo "- 设置vnc" >> README.txt
+./otg;echo "- 开启otg功能，并作为有线网卡" >> README.txt
+./pip_config;echo "- 升级pip，并更换源为清华镜像" >> README.txt
+
