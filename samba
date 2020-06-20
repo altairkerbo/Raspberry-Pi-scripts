@@ -1,0 +1,14 @@
+#!/bin/bash
+
+apt install -y expect
+apt install -yf samba samba-common
+chmod 777 /home/pi/Public
+echo "
+[Raspi]
+   path = /home/pi/Public
+   valid users = samba
+   writable = yes
+" >> /etc/samba/smb.conf
+apt install -y expect
+./smb_add_user
+service smbd restart

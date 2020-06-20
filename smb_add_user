@@ -1,0 +1,17 @@
+#!/usr/bin/expect
+
+set timeout 30
+spawn adduser --no-create-home --disabled-password --disabled-login samba
+expect "*[]:";send "\r"
+expect "*[]:";send "\r"
+expect "*[]:";send "\r"
+expect "*[]:";send "\r"
+expect "*[]:";send "\r"
+expect "*\[Y/n\]";send "Y\r"
+spawn smbpasswd -a samba
+expect "New SMB password:"
+send "smbpasswd\r"
+expect "*password*"
+send "smbpasswd\r"
+expect "Added user*"
+exit
