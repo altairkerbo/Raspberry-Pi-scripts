@@ -1,9 +1,9 @@
 #!/bin/bash
 
-./apt_sources;echo "-更换apt源为清华镜像，并update" >> README.txt
-./static_ip;echo "-设置静态ip" >> README.txt
-./vnc;echo "-设置vnc" >> README.txt
-./otg;echo "-开启otg功能，并作为有线网卡" >> README.txt
+./apt_sources;echo "- 更换apt源为清华镜像，并update" >> README.txt
+./vim;echo "- 配置vim" >> README.txt
+./static_ip;echo "- 设置静态ip" >> README.txt
+./vnc;echo "- 设置vnc" >> README.txt
+./otg;echo "- 开启otg功能，并作为有线网卡" >> README.txt
 ./pip_config;echo "- 更换pip源为清华镜像，并update" >> README.txt
 ./samba;echo "- 安装并配置samba，共享Public文件夹" >> README.txt
-
