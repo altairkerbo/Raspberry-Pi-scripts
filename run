@@ -7,3 +7,5 @@
 ./otg;echo "- 开启otg功能，并作为有线网卡" >> README.txt
 ./pip_config;echo "- 更换pip源为清华镜像，并update" >> README.txt
 ./samba;echo "- 安装并配置samba，共享Public文件夹" >> README.txt
+
+cp README.txt /boot
